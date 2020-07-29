@@ -1,14 +1,8 @@
 <?php
 
 use App\Models\ItemType;
-use Faker\Generator as Faker;
-use Illuminate\Support\Str;
+use Database\Factories\Factories\DictionaryFactory;
 
-$factory->define(ItemType::class, function (Faker $faker) {
-    $name = $faker->name;
-
-    return [
-        'name' => $name,
-        'key' => Str::kebab($name),
-    ];
+$factory->define(ItemType::class, function () {
+    return DictionaryFactory::handle();
 });

@@ -2,14 +2,15 @@
 
 namespace Database\Factories\Factories;
 
-use Faker\Generator as Faker;
+use Faker\Factory as Faker;
 use Illuminate\Support\Str;
 
 class DictionaryFactory
 {
     public static function handle(): array
     {
-        $name = (new Faker)->name;
+        $faker = Faker::create();
+        $name = $faker->name;
 
         return [
             'name' => $name,

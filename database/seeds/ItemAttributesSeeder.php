@@ -7,12 +7,17 @@ class ItemAttributesSeeder extends Seeder
 {
     public function run(): void
     {
+        $timestamps = [
+            'created_at' => now(),
+            'updated_at' => now(),
+        ];
+
         $items = collect(ITEM_ATTRIBUTES)
-            ->map(function ($item) {
+            ->map(function ($item) use ($timestamps) {
                 return [
                     'key' => $item,
                     'name' => ucfirst($item),
-                ];
+                ] + $timestamps;
             })
             ->toArray();
 

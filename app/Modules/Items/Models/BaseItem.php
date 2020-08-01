@@ -15,16 +15,6 @@ abstract class BaseItem
         $this->name = $item->name;
     }
 
-    public function setAttributes(array $attributes): void
-    {
-        $this->attributes = $attributes;
-    }
-
-    public function getAttribute(string $key): string
-    {
-        return Arr::get($this->attributes, $key);
-    }
-
     public function setAttribute(string $key, int $value): void
     {
         Arr::set($this->attributes, $key, $value);

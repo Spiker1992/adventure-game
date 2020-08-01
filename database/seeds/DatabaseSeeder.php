@@ -9,6 +9,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ItemTypesSeeder::class,
             ItemAttributesSeeder::class,
+            ItemsSeeder::class,
         ]);
     }
 }

@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateItemItemAttributesTable extends Migration
 {
-    protected $table = 'item_item_attributes';
+    protected $table = DATABASE_ITEM_ITEM_ATTRIBUTES;
 
     public function up()
     {
@@ -18,6 +18,9 @@ class CreateItemItemAttributesTable extends Migration
             $table->foreignId('item_attribute_id')
                 ->constrained('item_attributes')
                 ->onDelete('cascade');
+
+            $table->unsignedSmallInteger('min');
+            $table->unsignedSmallInteger('max');
         });
     }
 

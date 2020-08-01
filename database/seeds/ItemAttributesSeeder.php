@@ -5,10 +5,17 @@ use Illuminate\Database\Seeder;
 
 class ItemAttributesSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
-        $attributes = config('items.attributes');
+        $items = collect(ITEM_ATTRIBUTES)
+            ->map(function ($item) {
+                return [
+                    'key' => $item,
+                    'name' => ucfirst($item),
+                ];
+            })
+            ->toArray();
 
-        ItemAttribute::insert($attributes);
+        ItemAttribute::insert($items);
     }
 }

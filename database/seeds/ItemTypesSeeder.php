@@ -1,14 +1,26 @@
 <?php
 
-use App\Models\ItemTypes;
+use App\Models\ItemType;
 use Illuminate\Database\Seeder;
 
 class ItemTypesSeeder extends Seeder
 {
     public function run()
     {
-        $types = config('items.types');
+        $timestamps = [
+            'created_at' => now(),
+            'updated_at' => now(),
+        ];
 
-        ItemTypes::insert($types);
+        $items = collect(ITEM_TYPES)
+            ->map(function ($item, $key) use ($timestamps) {
+                return [
+                    'key' => $key,
+                    'name' => ucfirst($key),
+                ] + $timestamps;
+            })
+            ->toArray();
+
+        ItemType::insert($items);
     }
 }

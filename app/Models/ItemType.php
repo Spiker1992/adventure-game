@@ -2,12 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class ItemType extends Model
+class ItemType extends BaseDictionaryModel
 {
-    protected $fillable = [
-        'key',
-        'name',
-    ];
 }

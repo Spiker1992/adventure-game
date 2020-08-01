@@ -5,10 +5,22 @@ use Illuminate\Database\Seeder;
 
 class ItemAttributesSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
-        $attributes = config('items.attributes');
+        $timestamps = [
+            'created_at' => now(),
+            'updated_at' => now(),
+        ];
 
-        ItemAttribute::insert($attributes);
+        $items = collect(ITEM_ATTRIBUTES)
+            ->map(function ($item) use ($timestamps) {
+                return [
+                    'key' => $item,
+                    'name' => ucfirst($item),
+                ] + $timestamps;
+            })
+            ->toArray();
+
+        ItemAttribute::insert($items);
     }
 }

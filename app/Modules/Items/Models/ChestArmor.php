@@ -2,6 +2,6 @@
 
 namespace App\Modules\Items\Models;
 
-abstract class BaseWeapon extends BaseItem
+class ChestArmor extends Armor
 {
 }

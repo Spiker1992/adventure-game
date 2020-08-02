@@ -2,6 +2,6 @@
 
 namespace App\Modules\Items\Models;
 
-class Sword extends BaseWeapon
+class Sword extends Weapon
 {
 }

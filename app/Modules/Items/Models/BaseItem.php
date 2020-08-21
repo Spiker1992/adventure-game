@@ -3,9 +3,10 @@
 namespace App\Modules\Items\Models;
 
 use App\Models\Item;
+use App\Modules\Items\Interfaces\ItemInterface;
 use Illuminate\Support\Arr;
 
-abstract class BaseItem
+abstract class BaseItem implements ItemInterface
 {
     protected $name;
     protected $attributes = [];

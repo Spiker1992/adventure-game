@@ -10,7 +10,7 @@ class DictionaryFactory
     public static function handle(): array
     {
         $faker = Faker::create();
-        $name = $faker->name;
+        $name = $faker->unique;
 
         return [
             'name' => $name,

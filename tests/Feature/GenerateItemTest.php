@@ -5,21 +5,10 @@ namespace Tests\Feature;
 use App\Modules\Items\Factories\ItemFactory;
 use App\Modules\Items\Models\ChestArmor;
 use App\Modules\Items\Models\Sword;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Artisan;
-use Tests\TestCase;
+use Tests\DatabaseTestCase;
 
-class GenerateItemTest extends TestCase
+class GenerateItemTest extends DatabaseTestCase
 {
-    use RefreshDatabase;
-
-    public function setUp(): void
-    {
-        parent::setUp();
-
-        Artisan::call('db:seed');
-    }
-
     public function dataProvider(): array
     {
         return [

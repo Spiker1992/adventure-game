@@ -3,7 +3,7 @@
 namespace App\Modules\Items\Models;
 
 use App\Models\Item;
-use App\Modules\Items\Interfaces\ItemInterface;
+use App\Modules\Items\Models\Interfaces\ItemInterface;
 use Illuminate\Support\Arr;
 
 abstract class BaseItem implements ItemInterface

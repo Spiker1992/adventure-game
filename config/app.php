@@ -1,5 +1,7 @@
 <?php
 
+use App\Modules\Hero\Providers\HeroProvider;
+
 return [
 
     /*
@@ -174,7 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        HeroProvider::class,
     ],
 
     /*

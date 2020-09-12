@@ -1,6 +1,7 @@
 <?php
 
-use App\Modules\Hero\Providers\HeroProvider;
+use AdventureGame\Hero\Providers\HeroProvider;
+use AdventureGame\Item\Providers\ItemProvider;
 
 return [
 
@@ -177,6 +178,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         HeroProvider::class,
+        ItemProvider::class,
     ],
 
     /*

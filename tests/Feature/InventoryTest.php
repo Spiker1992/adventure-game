@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use App\Modules\Inventory\Models\Inventory;
-use App\Modules\Items\Factories\ItemFactory;
+use AdventureGame\Inventory\Domains\Inventory;
+use AdventureGame\Item\Factories\ItemFactory;
 use Tests\DatabaseTestCase;
 
 class InventoryTest extends DatabaseTestCase

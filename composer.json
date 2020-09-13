@@ -37,7 +37,11 @@
             "app/constants/constants.php"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "AdventureGame\\Common\\": "modules/Common/src/",
+            "AdventureGame\\Hero\\": "modules/Hero/src/",
+            "AdventureGame\\Inventory\\": "modules/Inventory/src/",
+            "AdventureGame\\Item\\": "modules/Item/src/"
         },
         "classmap": [
             "database/seeds",

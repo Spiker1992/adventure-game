@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\ItemType;
+use AdventureGame\Item\Models\ItemType;
 use Database\Factories\Factories\DictionaryFactory;
 
 $factory->define(ItemType::class, function () {

@@ -1,0 +1,14 @@
+{
+    "name": "ag-common",
+    "description": "Common Classes",
+    "minimum-stability": "stable",
+    "version": "1.0",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AG\\Common\\": "src"
+        }
+    }
+}

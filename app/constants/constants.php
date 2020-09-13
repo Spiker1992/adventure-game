@@ -1,5 +1,6 @@
 <?php
 
-include 'DatabaseTables.php';
-include 'Items.php';
-require_once __DIR__ . '/../Modules/Hero/constants/constants.php';
+$basePath = __DIR__ . '/../../';
+
+require_once "{$basePath}Modules/Item/constants/constants.php";
+require_once "{$basePath}Modules/Hero/constants/constants.php";

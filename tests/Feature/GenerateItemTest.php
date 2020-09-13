@@ -2,9 +2,9 @@
 
 namespace Tests\Feature;
 
-use App\Modules\Items\Factories\ItemFactory;
-use App\Modules\Items\Models\ChestArmor;
-use App\Modules\Items\Models\Sword;
+use AdventureGame\Item\Factories\ItemFactory;
+use AdventureGame\Item\Domains\ChestArmor;
+use AdventureGame\Item\Domains\Sword;
 use Tests\DatabaseTestCase;
 
 class GenerateItemTest extends DatabaseTestCase

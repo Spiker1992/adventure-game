@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\Item;
-use App\Models\ItemType;
+use AdventureGame\Item\Models\Item;
+use AdventureGame\Item\Models\ItemType;
 use Faker\Generator as Faker;
 
 $factory->define(Item::class, function (Faker $faker) {

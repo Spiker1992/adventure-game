@@ -1,0 +1,22 @@
+{
+    "name": "ag-hero",
+    "description": "Hero Module",
+    "minimum-stability": "stable",
+    "version": "1.0",
+    "require": {
+        "php": ">=7.4.0",
+        "ag-common": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AG\\Hero\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdventureGame\\Hero\\Providers\\HeroProvider"
+            ]
+        }
+    }
+}

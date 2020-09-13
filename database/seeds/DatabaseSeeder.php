@@ -1,6 +1,11 @@
 <?php
 
-use App\Modules\Hero\Database\Seeds\HeroTypesSeeder;
+use AdventureGame\Hero\Database\Seeds\HeroTypesSeeder;
+use AdventureGame\Item\Database\Seeds\{
+    ItemAttributesSeeder,
+    ItemsSeeder,
+    ItemTypesSeeder,
+};
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder

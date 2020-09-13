@@ -1,0 +1,14 @@
+{
+    "name": "ag-inventory",
+    "description": "Inventory Module",
+    "minimum-stability": "stable",
+    "version": "1.0",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AG\\Inventory\\": "src"
+        }
+    }
+}

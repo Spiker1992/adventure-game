@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class BaseProvider extends ServiceProvider
 {
-    protected $moduleSourceDirectory;
+    protected string $moduleSourceDirectory;
 
     public function boot()
     {
